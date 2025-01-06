@@ -87,6 +87,32 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "checkHasVoted",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkIsOnwer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -129,6 +155,25 @@
 						"internalType": "struct Voting.Person[]",
 						"name": "",
 						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_indexCandidate",
+						"type": "uint256"
+					}
+				],
+				"name": "getCandidateVoters",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
 					}
 				],
 				"stateMutability": "view",
@@ -200,6 +245,19 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
+						"name": "_indexCandidate",
+						"type": "uint256"
+					}
+				],
+				"name": "removeCandidate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
 						"name": "_index",
 						"type": "uint256"
 					}
@@ -256,6 +314,30 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "voters",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -328,11 +410,11 @@
 			]
 		},
 		"contracts/Voting.sol": {
-			"keccak256": "0xbea48425768eabda9894e617d8e0e632727860e03536676154b942826944f937",
+			"keccak256": "0xdda9cadb127fa02b9b710dbdf4f92415c81ffb1d524ade6e2362e14e3d02d7ba",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://27106ee7134e5c5daf41ebd940abec93264b2c616592c2dcd473074e98a5d299",
-				"dweb:/ipfs/QmTgVLp5h8uXq3A2yGdjivDjGFrKg4Vnd4af89wtMbZWb5"
+				"bzz-raw://5bcf2f18030c1e585d668a0201aaae3bb6fbf6964829c5465d479289008d5e05",
+				"dweb:/ipfs/QmSGu4W8zM9bMhXZbSH2wkihFi5PYEASJbj81wvAZG2P7W"
 			]
 		}
 	},
